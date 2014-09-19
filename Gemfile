@@ -12,7 +12,7 @@ gem 'haml'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'omniauth'
-gem 'omniauth-eventful', '~> 0.0.2'
+gem 'omniauth-eventful', :path => "~/Documents/Code/ruby/omniauth-eventful"
 gem 'pg'
 gem 'rails', '4.1.5'
 gem 'sass-rails', '~> 4.0.3'

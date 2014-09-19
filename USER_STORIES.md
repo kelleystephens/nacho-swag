@@ -2,16 +2,16 @@
 
 ____
 ## Features
-* User signs up through Eventful
-* User signs in through Eventful
-* User signs out
-* User adds contact information
-* User views their dashboard
-* User adds an item for rent
-* User searches for items
-* User views an available item
-* User views an unavailable item
-* User rents an item
+- [x] User signs up through Eventful (implemented)
+- [x] User signs in through Eventful
+- [x] User signs out
+- [ ] User adds contact information
+- [x] User views their dashboard
+- [ ] User adds an item for rent
+- [ ] User searches for items
+- [ ] User views an available item
+- [ ] User views an unavailable item
+- [ ] User rents an item
 
 ____
 ## Stories

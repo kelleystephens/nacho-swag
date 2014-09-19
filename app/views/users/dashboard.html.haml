@@ -1,0 +1,22 @@
+%h1 #{@user.name}'s Dashboard
+%h2 Your Items:
+- if @items.empty?
+  %p You have no items for rent
+- else
+  %ul#available
+    Available:
+    - @items.each do | item |
+      - if !item.rented
+        %li= item.name
+  %ul#rented
+    Rented
+    - @items.each do | item |
+      - if item.rented
+        %li= item.name
+%h2 Items Rented by You:
+- if @rented_items.empty?
+  %p You have not rented any items
+- else
+  %ul#renting
+  - @rented_items.each do | rented_item |
+    %li= rented_item.item.name
