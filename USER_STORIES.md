@@ -5,7 +5,7 @@ ____
 - [x] User signs up through Eventful (implemented)
 - [x] User signs in through Eventful
 - [x] User signs out
-- [ ] User adds contact information
+- [ ] User adds email
 - [x] User views their dashboard
 - [ ] User adds an item for rent
 - [ ] User searches for items
@@ -56,20 +56,19 @@ ____
 * #### Acceptance Criteria:
   * User is logged out
 
-### User adds contact information
-> As a user, I want to add contact info in order to rent items
+### User adds email
+> As a user, I want to add email in order to rent items
 
 * #### Usage:
-  * On dashboard, click "Add Contact Information"
-  * User selects preferred method of contact
-  * User enters contact info
+  * On dashboard, click "Add Email"
+  * User enters email
   * User clicks "Submit"
   * User sees dashboard with no "Add Contact" link
 
 
 * #### Acceptance Criteria:
   * User is logged in
-  * All inputs must be filled in
+  * Input must be filled in
   * "Add Contact Info" is not visible if info has been entered
 
 ### User views their dashboard

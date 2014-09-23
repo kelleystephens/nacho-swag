@@ -15,11 +15,11 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def after_sign_up_path_for(resource)
     flash[:notice] = "Welcome to Nacho Swag, #{current_user.email}"
-    dashboard_path
+    user_path
   end
 
   def after_sign_in_path_for(resource)
     flash[:notice] = "Welcome back, #{current_user.email}"
-    dashboard_path
+    user_path
   end
 end

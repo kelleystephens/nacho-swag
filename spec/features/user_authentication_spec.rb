@@ -8,7 +8,7 @@ feature "User authentication" do
     expect(page).to have_content "Logout"
     expect(page).not_to have_content "Login"
     expect(User.count).to eq 1
-    expect(current_path).to eq dashboard_path
+    expect(current_path).to eq user_path
   end
 
   scenario "Login and Logout with Eventful" do

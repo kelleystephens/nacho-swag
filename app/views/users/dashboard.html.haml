@@ -1,4 +1,6 @@
 %h1 #{@user.name}'s Dashboard
+- if @user.email.nil?
+  = link_to "Add Email", edit_user_path(@user)
 %h2 Your Items:
 - if @items.empty?
   %p You have no items for rent

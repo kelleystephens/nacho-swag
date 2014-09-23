@@ -1,6 +1,6 @@
 Fabricator(:user) do
   name     "MyString"
-  email    "MyString"
+  email    nil
   provider "MyString"
   uid      "MyString"
 end

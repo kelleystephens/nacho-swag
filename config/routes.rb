@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/dashboard', to: 'users#dashboard'
+  resource :user
 
   #Eventful Callback
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
