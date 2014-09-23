@@ -1,3 +1,12 @@
+PATH
+  remote: ~/Documents/Code/ruby/omniauth-eventful
+  specs:
+    omniauth-eventful (0.0.1.pre)
+      multi_json (~> 1.0)
+      multi_xml (~> 0.5)
+      omniauth (~> 1.0)
+      omniauth-oauth (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,11 +101,6 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
-    omniauth-eventful (0.0.1.pre)
-      multi_json (~> 1.0)
-      multi_xml (~> 0.5)
-      omniauth (~> 1.0)
-      omniauth-oauth (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -213,7 +217,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   omniauth
-  omniauth-eventful (= 0.0.1.pre)
+  omniauth-eventful!
   pg
   poltergeist
   pry-rails
