@@ -1,5 +1,3 @@
-require "pry"
-
 class User < ActiveRecord::Base
   devise :omniauthable, :omniauth_providers => [:eventful]
 
