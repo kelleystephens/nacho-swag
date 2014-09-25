@@ -1,6 +1,6 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def eventful
-    @user = User.from_omniauth(request.env["omniauth.auth"])
+    @user = User.from_omniauth(auth_hash)
 
     if @user.persisted?
       sign_in_and_redirect @user
@@ -12,6 +12,10 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   protected
+
+  def auth_hash
+    request.env['omniauth.auth']
+  end
 
   def after_sign_up_path_for(resource)
     flash[:notice] = "Welcome to Nacho Swag, #{current_user.email}"

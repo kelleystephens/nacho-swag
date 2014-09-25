@@ -10,10 +10,8 @@
   %body
     %header
       - if user_signed_in?
-        %li= link_to 'Logout', destroy_user_session_path, :method => :delete
-      - else
-        %li
-          = link_to 'Login with Eventful', user_omniauth_authorize_path(:eventful)
+        %li.logout= link_to 'Logout', destroy_user_session_path, :method => :delete
+
     %main
       - if notice.present?
         .alert-box.success{ "data-alert" => "" }

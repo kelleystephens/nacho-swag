@@ -1,1 +1,7 @@
-<h1>Welcome Aboard</h1>
+.container
+  .top
+    %h1 LOGIN
+    %h2 with
+  .bottom
+    .eventful-link
+      = link_to 'eventful', user_omniauth_authorize_path(:eventful)

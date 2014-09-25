@@ -1,5 +1,20 @@
-- if @user.name
-  %h1 Welcome #{@user.name}
+.welcome
+  - if @user.first_name
+    %h1 Welcome #{@user.first_name}
+  - else
+    %h1 Welcome #{@user.username}
+=image_tag ("#{@user.image}")
+%h1 Name: #{@user.name}
+%h2 Username: #{@user.username}
+- if @user.hometown
+  %h2 Hometown: #{@user.hometown}
 - else
-  %h1 Welcome #{@user.username}
--# =image_tag ("#{@user.images[image][url]}")
+  %h2 Hometown: Has not been set
+- if @user.interests
+  %h2 Interests: #{@user.interests}
+- else
+  %h2 Interests: Have not been set
+- if @user.bio
+  %h2 Bio: #{@user.bio}
+- else
+  %h2 Bio: Has not been set

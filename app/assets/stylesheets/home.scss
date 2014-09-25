@@ -1,0 +1,56 @@
+$blue: #0066CC;
+$green: #46AB14;
+$light-grey: #C6C6C6;
+$grey: #393939;
+$dark-grey: #222222;
+$orange: #FF7300;
+
+.container{
+  background-color: $grey;
+}
+
+.top{
+  height: 350px;
+  background-color: $dark-grey;
+
+  h1, h2{
+    display: inline-block;
+    border-radius: 10%;
+    color: $light-grey;
+    background-color: $orange;
+  }
+
+  h1{
+    padding: 45px 90px;
+    margin: 45px 25px 45px 10%;
+    font-size: 6em;
+  }
+
+  h2{
+    padding: 35px 45px;
+  }
+
+}
+
+.bottom{
+  height: 450px;
+  .eventful-link{
+    background-color: white;
+    background-image: url("http://api.eventful.com/images/powered/eventful_139x44.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 15px auto;
+    a{
+      border-radius: 50%;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0;
+    }
+  }
+}
