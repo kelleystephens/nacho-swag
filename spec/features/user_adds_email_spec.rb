@@ -7,9 +7,9 @@ feature "User adds an email address" do
       provider: "eventful")
     sign_into_eventful_as "joe"
     visit '/'
-    click_link "Login with Eventful"
+    click_link "Eventful"
     visit dashboard_path
-    click_link "Add Email"
+    # click_link "Add Email"
   end
 
   scenario "successfully adds email" do

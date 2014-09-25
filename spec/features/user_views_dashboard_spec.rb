@@ -6,7 +6,7 @@ feature "User views dashboard" do
       provider: "eventful")
     sign_into_eventful_as "joe"
     visit '/'
-    click_link "Login with Eventful"
+    click_link "Eventful"
   end
   scenario "User has no items and has not rented any items" do
     visit dashboard_path
