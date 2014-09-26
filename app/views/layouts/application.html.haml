@@ -9,18 +9,19 @@
     = csrf_meta_tags
   %body
     %header
-      - if user_signed_in?
-        %li.logout= link_to 'Logout', destroy_user_session_path, :method => :delete
-
-    %main
       - if notice.present?
         .alert-box.success{ "data-alert" => "" }
           = notice
           %a.close{ href: "#" } &times;
+
       - if alert.present?
         .alert-box.alert{ "data-alert" => "" }
           = alert
           %a.close{ href: "#" } &times;
+
+      - if user_signed_in?
+        %li= link_to 'Logout', destroy_user_session_path, :method => :delete, :class => "logout"
+    %main
       = yield
 
     = javascript_include_tag "application"

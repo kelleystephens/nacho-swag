@@ -1,3 +1,12 @@
+@import "foundation/components/buttons";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 $blue: #0066CC;
 $green: #46AB14;
 $light-grey: #C6C6C6;
@@ -5,8 +14,53 @@ $grey: #393939;
 $dark-grey: #222222;
 $orange: #FF7300;
 
-.welcome{
-  height: 150px;
+header{
+  li{
+    text-align: right;
+  }
+}
+
+.logout{
+  @include button();
+  margin: 15px;
+  @include border-radius(10px);
   background-color: $orange;
-  
+  border-color: $orange;
+  transition: background-color 300ms ease-out;
+  &:hover{
+    background-color: #fff;
+    color: $orange;
+  }
+}
+
+.welcome{
+  height: 200px;
+  background-color: $dark-grey;
+  text-align: center;
+  h1 {
+    color: $light-grey;
+    border-bottom: 2px dotted;
+    width: 35%;
+    margin: auto;
+  }
+}
+
+.bottom{
+  img{
+    margin: 10%;
+    width: 100px;
+    float: left;
+    box-shadow: 3px 3px 6px $dark-grey;
+    background-color: $orange;
+  }
+  .info{
+    float: right;
+    width: 65%;
+    h1{
+      color: $blue;
+    }
+    h2{
+      color: $green;
+    }
+  }
 }

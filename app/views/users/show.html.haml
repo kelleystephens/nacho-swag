@@ -3,18 +3,20 @@
     %h1 Welcome #{@user.first_name}
   - else
     %h1 Welcome #{@user.username}
-=image_tag ("#{@user.image}")
-%h1 Name: #{@user.name}
-%h2 Username: #{@user.username}
-- if @user.hometown
-  %h2 Hometown: #{@user.hometown}
-- else
-  %h2 Hometown: Has not been set
-- if @user.interests
-  %h2 Interests: #{@user.interests}
-- else
-  %h2 Interests: Have not been set
-- if @user.bio
-  %h2 Bio: #{@user.bio}
-- else
-  %h2 Bio: Has not been set
+.bottom
+  =image_tag ("#{@user.image}")
+  .info
+    %h1 Name: #{@user.name}
+    %h2 Username: #{@user.username}
+    - if @user.hometown
+      %h2 Hometown: #{@user.hometown}
+    - else
+      %h2 Hometown: Has not been set
+    - if @user.interests
+      %h2 Interests: #{@user.interests}
+    - else
+      %h2 Interests: I haven't listed anything specific
+    - if @user.bio
+      %h2 Bio: #{@user.bio}
+    - else
+      %h2 Bio: Want more information about me? Just ask!
